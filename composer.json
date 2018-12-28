@@ -1,0 +1,39 @@
+{
+    "name": "m1guelpf/hyperhost-api",
+    "description": "PHP Client for the Hyper.Host API",
+    "keywords": [
+        "hyperhost",
+        "hyperhost-api",
+        "m1guelpf"
+    ],
+    "homepage": "https://github.com/m1guelpf/php-hyperhost-api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Miguel Piedrafita",
+            "email": "soy@miguelpiedrafita.com",
+            "homepage": "https://miguelpiedrafita.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^5.5|^7.0",
+        "guzzlehttp/guzzle":"^6.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "M1guelpf\\HyperHostAPI\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "M1guelpf\\HyperHostAPI\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
